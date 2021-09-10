@@ -1,0 +1,76 @@
+.modal-header1 {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align:center;
+	align-items:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	padding: 1rem 1rem;
+	border-bottom: 1px solid #dee2e6;
+	border-top-left-radius: calc(0.3rem - 1px);
+	border-top-right-radius: calc(0.3rem - 1px);
+	background-color: #1A1800;
+    color: white;
+    border-bottom: 10px solid #FFDA42;
+}
+
+
+.contact_form{
+	max-width: 450px;
+	margin: 25px auto;
+}
+.container h1{
+	color:#888;
+}
+.contact_form .form-group{
+	margin-bottom: 0;
+	position: relative;
+}
+.contact_form input,
+.contact_form textarea{
+	margin-bottom: 10px;
+}
+.contact_form textarea{
+	height: 180px;
+}
+.contact_form input:not([type='submit']) + i{
+	/* apply the effects for every input fields expect input field with submit type */
+    height: 0;
+    float: left;
+    position: relative;
+    top: -33px;
+    left: 10px;
+    color: #999;
+}
+.contact_form input{
+    padding-left: 33px;
+}
+.contact_form .asterisx{
+
+    float: right;
+    height: 0;
+    font-size: 25px;
+    color: #d50e0e;
+    right: 10px;
+    top: 6px;
+    position: absolute;
+
+}
+
+.contact_form .custom-alert{
+	padding: 5px 10px;
+	display: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/* end edit contact form */
+
+/* start footer */
+.foot ul li:hover{
+	transform:rotate(360deg);
+	
+}
+.foot ul li{
+	transition: 2s;
+}
+/* end footer */

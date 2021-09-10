@@ -1,0 +1,333 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>CRYPTP ARABI</title>
+	<link rel="icon" href="شعار الموقع.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/frontend.css">
+	<script src="jquery_3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body dir="rtl" lang="ar">
+	<!-- header -->
+
+	<div class="jumbotron text-center text-white" style="margin-bottom:0; background-color: #1A1800;">
+		<h1>كريبتو بالعربي</h1>
+		<p>عالم العملات الرقمية...تعرف على نظام العالم الجديد</p>
+	</div>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: #0B3B5E;">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Contact.html">تواصل معنا</a>
+				</li>
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						تسجيل
+					</a>
+					<div class="dropdown-menu">
+						<!-- Button for sign in modal [myModal] -->
+						<button class="dropdown-item" type="button" data-toggle="modal" data-target="#myModal">إنشاء
+							حساب</button>
+						<!-- Button for log in modal [lmyModal] -->
+						<button class="dropdown-item" type="button" data-toggle="modal" data-target="#lmyModal">تسجيل
+							الدخول</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<!-- The sign in Modal -->
+		<div class="modal fade" id="myModal" dir="ltr">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header1">
+						<h4 class="modal-title">إنشاء حساب </h4>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+
+						<div class="container">
+							<form action="" class="needs-validation" novalidate>
+								<div class="form-group">
+									<label for="fullname">Full name:</label>
+									<input type="text" class="form-control" id="fullname"
+										placeholder="Enter your full name" name="pswd" required>
+								</div>
+								<label for="usr">Username:</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">@</span>
+									</div>
+									<input type="text" class="form-control" placeholder="Username" id="usr"
+										name="username">
+								</div>
+								<div class="form-group">
+									<label for="demo">Email:</label>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control" placeholder="Email" id="demo"
+											name="email">
+										<div class="input-group-append">
+											<span class="input-group-text">@gmail.com</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control" id="pwd" placeholder="Enter password"
+										name="pswd" required>
+								</div>
+								<div class="form-group">
+									<label for="repwd">Confirm password:</label>
+									<input type="password" class="form-control" id="repwd"
+										placeholder="Password confirmation" name="repswd" required>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="switch1" name="example">
+									<label class="custom-control-label" for="switch1">Remember me</label>
+								</div>
+						</div>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- The login Modal -->
+	<div class="container">
+		<div class="modal fade" id="lmyModal" dir="ltr">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header1">
+						<h4 class="modal-title">تسجيل الدخول </h4>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+
+						<div class="container">
+							<form action="" class="needs-validation" novalidate>
+								<label for="usr">Username:</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">@</span>
+									</div>
+									<input type="text" class="form-control" placeholder="Username" id="usr"
+										name="username">
+								</div>
+								<div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control" id="pwd" placeholder="Enter password"
+										name="pswd" required>
+								</div>
+						</div>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container text-right" style="margin-top:30px">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>من نحن ؟</h2>
+				<br>
+				<div class="container" style="background-color: #aaa;">
+					<img class="img-fluid mx-auto d-block" src="شعار الموقع.png" height="100%" width="100%">
+				</div>
+				<p class="text-justify">موقع كريبتو بالعربي, هو موقع عربي مهتم بسوق العملات الرقمية ويسعى لتقديم كافة
+					المعلومات التي يحتاجها
+					المستخدم العربي للتعلم ومعرفة المزيد عن العملات الرقمية. فنحن في موقع كريبتو بالعربي نصنع عالم من
+					الإبداع والتعلّم بشغف للمُضي نحو النجاح والرُقي, خدماتنا تسابق الزمن في كل المجالات التي نقدمها
+					لأعضاء مجتمعنا, وبخبراتنا ورؤيتنا الواضحة نحول كل الأحلام إلى حقائق ملموسة من الإبداع والتميز..</p>
+				<br>
+				<div class="card shadow bg-light" style="width:300px">
+					<h2 class="pb-2">فريقنا:</h2>
+					<img class="card-img-top" src="images/HomePage/Almonify.JPG" alt="Card image" style="width:100%">
+					<div class="card-body bg-light">
+						<h4 class="card-title">محمد المنيفي</h4>
+						<p class="card-text text-justify collapse" id="more">مدير في موقع كريبتو بالعربي مًلم بمجال
+							العملات الرقمية مكتسب
+							لخبرات بسيطة
+							وأسعى لمشاركتها مع الجميع.</p>
+						<button type="button" class="btn btn-primary float-left" data-toggle="collapse"
+							data-target="#more">
+							المزيد .. </button>
+					</div>
+				</div>
+				<hr class="d-sm-none">
+			</div>
+			<div class="col-sm-8">
+				<div class="container shadow-sm p-4 mb-4 bg-white">
+					<h2>ماهي البيتكوين ؟</h2>
+					<h5>Done By\ Mohammed Almonify, Dec 7, 2019</h5>
+					<div class="container"> <img class="img-fluid mx-auto d-block"
+							src="images/HomePage/bitcoin-910307.png" width="50%" height="50%">
+					</div>
+					<p>Bitcoin image..</p>
+					<p class="text-justify">عملة البيتكوين هي عبارة عن عملة رقمية يتم تداولها من خلال عالم الإنترنت فقط،
+						وتتميز هذه العملة
+						بإمكانية استخدامها للشراء من خلال مواقع الإنترنت، كما بإمكان الشخص تحويل هذه العملة إلى أي عملة
+						نقدية من العملات التقليدية عبر منصات بيع وشراء البيتكوين والعملات الرقمية.
+						وتتميز هذه العملة بعدم وجود هيئة تنظيمية مركزية تقف وراءها. – بإمكانك قراءة بعض الحقائق عن
+						البيتكوين
+						– ولا تعد هذه العملة الوحيدة في سوق العملات الرقمية، لكنها تعد العملة الرائدة في هذا المجال.
+						والعملة
+						الأولى فيه ، فـ عملة البيتكوين هي عملة تشفيرية ، ويوجد في العالم المئات أو الآلاف من العملات
+						التشفيرية التي تشابه في نظام تصميمها البيتكوين الذي يعتمد على تكنولوجيا البلوكشين.
+						ويعود تأسيس البيتكوين إلى شخص لم يكشف عن هويته الحقيقة ولكن أطلق على نفسه اسم ساتوشي ناكاموتو ،
+						وهو
+						الاسم المستعار لمؤسس هذه العملة ، ولقد فكر بتأسيسها عام 2008 ، وكان الهدف منها إنشاء نظام نقدي
+						إلكتروني يعتمد على مبدأ الند للند في المعاملات المالية ، ولقد تم طرح هذه العملة لأول مرة في عام
+						2009
+						.
+						وكان يهدف مؤسس هذه العملة إلى تغيير الاقتصاد العالمي مقتديا بنجاح الويب بتغيير أساليب النشر .
+						ولقد
+						تم وصف عمله البيتكوين بأنها رقمية وتتأثر بعوامل مختلفة لتحديد سعرها ولا تمتلك لأرقام متسلسلة ،
+						وبالتالي انعدام الوسيلة التي تتيح تتبع ما تم إنفاقه للوصول إلى البائع والمشتري ، الأمر الذي
+						جعلها
+						عملة مرغوبة للأشخاص الحريصين على الخصوصية أو الأشخاص الذين يتاجرون بالبضائع غير المرغوبة .
+						وتتيح العملة المشفرة إمكانية تحويل عملتها إلى إحدى العملات الورقية من خلال الاتفاق بين الشخصين
+						على
+						بيع وشراء العملة مثل ما يتم في مجموعة بيتكوين العرب لشراء وبيع البيتكوين والعملات الرقمية.
+						وحتى الآن لم تنل هذه العملة الرقمية الاعتراف من دول العالم باستثناء ألمانيا ، والتي اعترفت بها
+						رسميا
+						على أنها نوع من النقود الإلكترونية ، وكان الهدف من هذا الاعتراف فرض ضرائب على الأرباح التي
+						تحققها
+						الشركات التي يجنيها حامل العملة. وفي الختام نرجو أن نكون قدمنا لكم معلومات قيمة عن عملة
+						البيتكوين
+						ونظامها الخاص ، وحتى الآن لازال الاسم الحقيقي لمؤسس هذه العملة مجهولا وغير معروفا.</p>
+				</div>
+				<div class="container shadow-sm p-4 mb-4 bg-white">
+					<h2>خمسة أسباب تجعل تقنية البلوكشين مستقبل التكنولوجيا</h2>
+					<h5>Done By\ Mohammed Almonify, NOV 2, 2019</h5>
+					<div class="container"> <img class="img-fluid mx-auto d-block" src="images/HomePage/subject1.jpg"
+							width="80%" height="80%">
+					</div>
+					<p>Blockchain image..</p>
+					<button type="button" class="btn btn-primary float-left" data-toggle="collapse" data-target="#demo">
+						أكمل القراءة .. </button>
+					<div id="demo" class="collapse"><br><br>
+						<p class="text-justify">خمسة أسباب تجعل تقنية البلوكشين مستقبل التكنولوجيا:<br>
+							1- إزالة الوسطاء في العديد من المجالات الرئيسية: تستخدم البلوكشين تقنية دفتر الأستاذ الموزعة
+							(DLT)، مما يعني أنه لا يتم حفظ البيانات في مكان واحد، ولكن عبر العقد و المستخدمين. بينما لا
+							تعمل
+							جميع البلوكشين بهذه الطريقة، يتم تثبيت جميع تطبيقات البلوكشين تقريبا على تقنية دفتر الأستاذ
+							الموزعة الخاصة بها. هذا يبقي كل عقدة أو مستخدم على علم بالتطورات الحاصلة عبر السلسلة. يتم
+							تسجيل
+							المعاملات من حيث الكتل التي تتم إضافتها فقط بعد عملية التحقق والتحقق التي تتم إما من خلال
+							إثبات
+							الملكية أو إثبات العمل. لا يمكن إزالة الكتل بمجرد إضافتها أو تعديلها، مما يجعل البلوكشين
+							أكثر
+							أمانا من الوثائق الورقية وقواعد البيانات التقليدية والخيارات الأخرى. ما يعني إلغاء الحاجة
+							إلى
+							مدقق طرف ثالث فحسب، بل يلغي أيضا إمكانية تلاعب أي شخص بالبيانات أو التلاعب بها. <br>
+							2- البلوكشين ودعمه لحالات الإستخدام المختلفة: البلوكشين يمكن أن يكون بلوكشين عام أو خاص أو
+							يمكن
+							الجمع بين هذه المجموعات كبروتوكول واحد في الطبقة العلوية باستعمال بروتوكول آخر. مثال عن ذلك
+							مشروع عملة “ليبرا” التي تديرها شركة فيسبوك. فعلى عكس البيتكوين، والعديد من العملات المشفرة
+							الأخرى، نجد أن عملة “ليبرا” وعلى الرغم من كونها قائمة على البلوكشين إلا أنه يتم التحكم فيها
+							ومراقبتها من قبل جمعية “ليبرا”. تتضمن هذه الجمعية شركة فيسبوك وشركاءها الأعضاء التي تتطلع
+							إلى
+							تحقيق الربح عكس عملة البيتكوين غير هادفة للربح. هذا التخصيص في تقنية البلوكشين يجعله متعدد
+							الاستخدامات بحيث أصبحت التكنولوجيا تستخدم الآن بشكل متزايد في العديد من التطبيقات غير
+							المتعلقة
+							بتقنية المعلومات. على سبيل المثال لا الحصر يتم استخدام البلوكشين في تخزين السجلات الطبية،
+							وإبرام
+							اتفاقيات ملزمة، وتتبع تدفق البضائع، وتخزين سجلات الائتمان الشخصية، وتسجيل الأراضي، وحتى
+							التحقق
+							من الأخبار في ضوء وباء الأخبار المزيفة.<br>
+							3- حجم سوق البلوكشين ينمو ويتزايد: وفقا لشركة “International Data Corporation” من المتوقع أن
+							ينمو الإنفاق على تقنية البلوكشين بوتيرة قوية خلال فترة 2018-2023 بمعدل نمو سنوي مركب لمدة
+							خمس
+							سنوات (CAGR) قدره 60.2 ٪.<br>
+							4- استغلال الحكومات لتقنية البلوكشين: من بين البلدان التي تبنت حلولا قائمة على أساس
+							البلوكشين
+							على نطاق واسع، دولة إستونيا والتي تعد مثالا ساطعا على الكيفية التي يمكن بها للبلوكشين تحقيق
+							الكفاءة في الإدارة وسهولة ممارسة الأعمال. استونيا استخدمت البلوكشين في مختلف الخدمات
+							الحكومية.
+							وبحسب ما ورد في المصدر يستخدم البلوكشين في مختلف الخدمات الرقمية الإستونية مثل السجلات
+							الصحية
+							الرقمية، وقاعدة بيانات الوصفات الطبية، والقضاء، والقانون والنظام، والخدمات المصرفية، وتسجيل
+							الأعمال التجارية، وتسجيل الأراضي. <br>
+							5- توجه رواد الأعمال نحو تقنية البلوكشين: زادت نسبة المدراء التنفيذيين الذين يطمحون لدمج
+							تقنية
+							البلوكشين ضمن أعمالهم وارتفعت من 84٪ في عام 2018 إلى 86% عام 2019،حيث اعتقد 86٪ من المدراء
+							التنفيذيين البالغ عددهم 1386 والذين شاركوا في استطلاع “Deloitte” من أكثر من عشرة بلدان، أن
+							البلوكشين سوف يسود في نهاية المطاف. <br>
+							وهو ما يدل على أن قادة الأعمال والشركات الكبرى يبحثون في اعتماد البلوكشين على محمل الجد ..
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- footer -->
+
+	<div class="jumbotron text-center foot" style="margin-bottom:0">
+		<b>COPYRIGHT 2020 &COPY; MOHAMMED ALMONIFY</b>
+		<h2> للتواصل</h2>
+		<div class="foot">
+			<address>
+				<p class="text-center">عبر الايميل:<br>info@mysite.com<br>عبر الهاتف:<br>777555888<br>أو عن طريق
+					التواصل معنا عبر مواقع التواصل الاجتماعي:<br></p>
+			</address>
+		</div>
+		<ul type='none'>
+			<li class="d-inline-flex"><a href="https://www.facebook.com"><img src="images/footer/facebook_color.png"
+						alt='facebook' width="70px" height="70px"></a></li>
+			<li class="d-inline-flex"><a href="https://www.youtube.com"><img src="images/footer/youtube_color.png"
+						alt='youtube' width="70px" height="70px"></a></li>
+			<li class="d-inline-flex"><a href="https://www.twitter.com"><img src="images/footer/twitter_color.png"
+						alt='twitter' width="70px" height="70px"></a></li>
+			<li class="d-inline-flex"><a href="https://www.telegram.com"><img src="images/footer/telegram_color.png"
+						alt='telegram' width="70px" height="70px"></a></li>
+			<li class="d-inline-flex"><a href="https://www.instagram.com"><img src="images/footer/in_color.png"
+						alt='telegram' width="70px" height="70px"></a></li>
+
+		</ul>
+	</div>
+
+
+</body>
+
+</html>
